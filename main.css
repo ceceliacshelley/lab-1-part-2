@@ -1,11 +1,130 @@
 .toolbar {
-    font-family: "Open Sans";
-    
+  list-style-type: none;
+  color: #69696a;
+  /* display: flex;
+  flex-flow: row; */
 }
-
 
 .black-button {
+  font-family: "open sans";
+  background-color: black;
+  color: white;
+  border-style: none;
+  border-radius: 30px;
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-left: 25px;
 }
 
+#scroll-down {
+  font-family: "open sans";
+  background-color: black;
+  border-radius: 30px;
+  border-style: none;
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-70%);
+}
 
-.
+html {
+  font-family: "open sans";
+}
+
+body {
+  margin: 30px;
+  margin-left: 120px;
+}
+
+#chirpus {
+  position: absolute;
+  top: 12%;
+  left: 16%;
+  transform: translate(-95%, -91%);
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  /* justify-content: space-between; */
+
+  width: auto;
+  text-decoration: none;
+  padding-right: 150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: flex;
+  /* justify-items: space-around; */
+  padding: 30px;
+  /* this pushed my buttons to the right and spaced them apart evenly */
+  /* text-decoration: none; */
+}
+
+#chirpus-inc-title {
+  font-size: 25px;
+  font-weight: 800;
+  padding-left: 15px;
+  margin: 30px;
+}
+
+.circles {
+  padding-left: 100px;
+}
+
+#pink-circle {
+  height: 250px;
+  width: 250px;
+  background-color: rgba(247, 136, 167, 0.6);
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+  left: 50%;
+}
+
+#purple-circle {
+  height: 150px;
+  width: 150px;
+  background-color: rgba(207, 130, 213, 0.6);
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+  top: -40%;
+  left: 130%;
+}
+
+#peach-circle {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(247, 193, 162, 0.7);
+  border-radius: 50%;
+  z-index: 3;
+  position: relative;
+  top: -45%;
+  left: 115%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+#text {
+  height: 50%;
+  width: 40%;
+  margin-left: 50px;
+  padding-left: 20px;
+  border-left: #69696a 1px solid;
+}
