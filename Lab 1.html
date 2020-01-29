@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    <title>Lab 1</title>
+  <link rel="stylesheet" href="./Lab 1_files/main.css"><link rel="stylesheet" type="text/css" href="./Lab 1_files/css"></head>
+
+  <body>
+    <div class="toolbar">
+      <div id="chirpus">chirpus inc.</div>
+      <ul>
+        <!-- <li id="chirpus">chirpus inc.</li> -->
+        <li><a href="http://127.0.0.1:5500/index.html" style="color:#69696a">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html" style="color:#69696a">Work</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html" style="color:#69696a">About Us</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html" style="color:#69696a">Contact</a></li>
+        <li>
+          <button class="black-button">
+            <a href="http://127.0.0.1:5500/index.html" style="color:white">Hire Us</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div id="chirpus-inc-title">chirpus inc.</div>
+    <div class="content">
+      <div id="text" style="color:#69696a">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </div>
+      <div class="circles">
+        <div id="pink-circle"></div>
+        <div id="purple-circle"></div>
+        <div id="peach-circle"></div>
+      </div>
+    </div>
+    <button id="scroll-down" style="color:white">Scroll Down</button>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
